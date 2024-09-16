@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Quotes adding website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React app that allows users to submit quotes with the author's name and saves them to a Firebase database. The quotes are then fetched and displayed on the app. This was actually a practise project to get a better hold on React.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add new quotes with author names <br/>
+- Store quotes in Firebase <br/>
+- Fetch and display quotes from the Firebase database <br/>
 
-### `npm start`
+## Language technologies used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- <strong>React: </strong>Frontend framework
+- <strong>Firebase: </strong>Backend for storing and retrieving quotes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+Check out the live version of the app [here](https://react-practice-b18a1.web.app/quotes)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `npm run build`
+- Nodejs
+- npm
+- Firebase account
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you want to run this project on your local machine, then follow these steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/PriyoRaven/quote-writter.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Navigate into the project directory
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd quotes-writter
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Install dependencies
 
-## Learn More
+Use npm to install all required dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. Set up Firebase
 
-### Code Splitting
+You need to configure Firebase to store and retrieve quotes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Create a Firebase project [here](https://console.firebase.google.com/).
+2. Set up Firestore as the database.
+3. Go to **Project Settings** > **General** and find your Firebase config (API key, authDomain, etc.).
+4. Create a `.env.local` file in the root of your project and make changes on the firebase link to your own firebase links.
 
-### Analyzing the Bundle Size
+### 5. Run the project locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Start the development server:
 
-### Making a Progressive Web App
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Open the app in your browser at `http://localhost:3000`.
 
-### Advanced Configuration
+### 6. Build the project (optional)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you want to create a production build of the app:
 
-### Deployment
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 7. Deploy to Firebase Hosting (optional)
 
-### `npm run build` fails to minify
+If you want to deploy the app using Firebase Hosting:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Install the Firebase CLI:
+
+   ```bash
+   npm install -g firebase-tools
+   ```
+
+2. Log in to Firebase:
+
+   ```bash
+   firebase login
+   ```
+
+3. Initialize Firebase in your project:
+
+   ```bash
+   firebase init
+   ```
+
+   Choose **Hosting** during the setup and select your Firebase project.
+
+4. Deploy the app:
+
+   ```bash
+   firebase deploy --only hosting
+   ```
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests. Any contributions, issues, or feature requests are welcome.
+
+## License
+
+This project is open for learning and educational purposes. Please use it responsibly and ethically. If you use or modify this code, please give proper credit. The project is provided without any warranties, and the author assumes no responsibility for any misuse.
+
+---
