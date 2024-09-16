@@ -54,8 +54,12 @@ You need to configure Firebase to store and retrieve quotes.
 
 1. Create a Firebase project [here](https://console.firebase.google.com/).
 2. Set up Firestore as the database.
-3. Go to **Project Settings** > **General** and find your Firebase config (API key, authDomain, etc.).
-4. Create a `.env.local` file in the root of your project and make changes on the firebase link to your own firebase links.
+3. Go to **Project Settings** > **General** and find your Firebase config.
+4. Create a `.env.local` file in the root of your project and add the following configuration:
+
+```bash
+REACT_APP_FIREBASE_DOMAIN=https://your-firebase-database-url
+```
 
 ### 5. Run the project locally
 
