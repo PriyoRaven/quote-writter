@@ -6,6 +6,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   background-color: #e7f8f8;
+  background-image: repeating-linear-gradient(45deg, rgb(231, 248, 248) 0px, rgb(231, 248, 248) 10px, transparent 10px, transparent 11px), repeating-linear-gradient(135deg, rgb(231, 248, 248) 0px, rgb(231, 248, 248) 10px, transparent 10px, transparent 11px), linear-gradient(90deg, rgb(210, 203, 240), rgb(210, 203, 240));
 }
 
 .centered {

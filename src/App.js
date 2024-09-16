@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
 import Comments from "./components/comments/Comments";
+import LoadingSpinner from "./components/UI/LoadingSpinner";
 import Layout from "./components/layout/Layout";
 
 const NewQuote = React.lazy(() => import("./pages/NewQuote"));
